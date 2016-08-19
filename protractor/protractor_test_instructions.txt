@@ -1,0 +1,31 @@
+Installation
+1) npm install protractor -g
+2) webdriver-manager update //this is needed because it is dependent upon selenium and you want thte latest drivers.
+3) webdriver-manager start //this will start the server. Default address for protractor: http://127.0.0.1:4444/wd/hub
+      - shows sessions running as well
+      - protractor is now running
+      - example for another project if interested
+            clone https://github.com/taylonr/intro-to-protractor
+            run npm install
+            run bower install
+            start MongoDB
+            run grunt
+            main website: http://localhost:3000/#!/EventRatings/new
+      No Longer Needed: 4) npm i protractor-angulardatepicker --save-dev //https://www.npmjs.com/package/protractor-angulardatepicker
+5) Goto a terminal, switch to the protractor directory, type: "protractor conf.js" and hit enter
+
+Run a Suite
+    protractor conf.js --suite=smoke
+    protractor conf.js --suite=full
+    protractor conf.js --suite=smoke,longRunning //runs more than 1 suite
+
+Here are the steps to run protractor tests - from terminal
+1) Terminal 1: Start webdriver-manager start
+2) Terminal 2: Go to the protractor subdirectory
+3) Terminal 2: protractor conf.js --suite=smoke
+
+
+
+
+
+
